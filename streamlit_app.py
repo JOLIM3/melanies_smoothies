@@ -54,8 +54,11 @@ if ingredients_list:
         icon="✅"
     )
 
+# New section to display smoothiefroot nutrition information
+import requests  
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)      
 
-        
 
 #if ingredients_list:
     #ingredients_string = ''
